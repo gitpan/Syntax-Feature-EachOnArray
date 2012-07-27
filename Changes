@@ -1,0 +1,10 @@
+Revision history for Syntax-Feature-EachOnArray
+
+0.02    2011-07-27 (SHARYANTO)
+
+        - Rename from feature::* to Syntax::Feature::* (thanks, mst.)
+
+
+0.01    2011-07-27 (SHARYANTO)
+
+        - First release.

@@ -1,5 +1,5 @@
 package Syntax::Feature::KeysOnArray; # so as not to confuse dzil?
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 use strict;
 use warnings;
 use Syntax::Feature::EachOnArray ();
@@ -49,7 +49,7 @@ Syntax::Feature::KeysOnArray - Emulate keys(@array) on Perl < 5.12
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

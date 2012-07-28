@@ -1,5 +1,5 @@
 package Syntax::Feature::EachOnArray; # don't confuse dzil?
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 # BEGIN PORTION (c) Toby Inkster
 {
 	package Tie::ArrayAsHash;
@@ -136,7 +136,7 @@ Syntax::Feature::EachOnArray - Emulate each(@array) on Perl < 5.12
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -172,6 +172,11 @@ L<syntax>
 L<Syntax::Feature::KeysOnArray>
 
 L<Syntax::Feature::ValuesOnArray>
+
+L<Array::Each::Override> (written in 2007, before Perl 5.10). Didn't find out
+about this module until after I uploaded Syntax::Feature::EachOnArray to CPAN.
+This module, although not using the L<syntax> syntax, does everything
+Syntax::Feature::{Each,Keys,Values}OnArray does and more. Take a look at it.
 
 =head1 AUTHOR
 

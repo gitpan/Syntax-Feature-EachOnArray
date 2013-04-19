@@ -1,5 +1,5 @@
 package Syntax::Feature::KeysOnArray; # so as not to confuse dzil?
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 use strict;
 use warnings;
 use Syntax::Feature::EachOnArray ();
@@ -31,7 +31,7 @@ sub install {
 
     return unless $^V lt 5.12.0;
     no strict 'refs';
-    *{"$args{into}::keys"} = \&akeys;
+    *{"$args{into}::keys"} = \&Tie::ArrayAsHash::akeys;
 }
 
 # XXX on uninstall, delete symbol
@@ -49,7 +49,7 @@ Syntax::Feature::KeysOnArray - Emulate keys(@array) on Perl < 5.12
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -63,6 +63,8 @@ version 0.03
 
 Beginning with 5.12, Perl supports keys() on array. This syntax extension
 emulates the support on older Perls.
+
+=for Pod::Coverage ^(install)$
 
 =head1 CAVEATS
 
@@ -82,7 +84,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

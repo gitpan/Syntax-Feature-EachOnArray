@@ -2,7 +2,7 @@ NAME
     Syntax::Feature::EachOnArray - Emulate each(@array) on Perl < 5.12
 
 VERSION
-    version 0.03
+    version 0.04
 
 SYNOPSIS
      # This can run on Perls older than 5.12 and have no effect on 5.12+
@@ -45,7 +45,7 @@ AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Steven Haryanto.
+    This software is copyright (c) 2013 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

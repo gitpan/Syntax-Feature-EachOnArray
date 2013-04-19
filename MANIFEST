@@ -15,4 +15,5 @@ t/each.t
 t/keys.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+t/release-rinci.t
 t/values.t
